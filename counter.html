@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Counter App</title>
+    <link rel="stylesheet" href="C:\Users\ruchi\OneDrive\Desktop\js r/css/bootstrap.min.css">
+    <style>
+
+        .a {
+            text-align: center;
+			margin-top:150px;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+<div class="a">
+    <h1>Counter Application</h1>
+    <div id="start" style="font-size:40px;">0</div>
+    <div class="btn-group">
+        <button class="btn btn-warning " onclick="inc()" style="font-size:20px;width:80px;height:40px;">+</button>
+        <button class="btn btn-primary " onclick="dec()" style="font-size:20px;width:80px;height:40px;" >-</button>
+        <button class="btn btn-danger " onclick="restart()" style="font-size:20px;width:80px;height:40px;">Restart</button>
+    </div>
+</div>
+
+
+<script>
+    var count = 0;
+
+    function value() {
+        document.getElementById("start").innerText = count;
+    }
+
+    function inc() {
+        count++;
+        value();
+    }
+
+    function dec() {
+        count--;
+        value();
+    }
+
+    function restart() {
+        count = 0;
+        value();
+    }
+</script>
+</body>
+</html>
